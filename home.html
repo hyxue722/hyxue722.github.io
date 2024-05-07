@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="defaultstyle.css">
+		<link rel="stylesheet" href="lightmode.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+		<script type="text/javascript" src="HomePreviewLoader.js"></script>
+
+	<link id="style1" rel="stylesheet" type="text/css" href="lightmode.css" />
+	<link id="style2" rel="stylesheet" type="text/css" href="darkmode.css" disabled="true" />
+	<script type="text/javascript">
+		function loadLighting(){
+			if(localStorage.getItem("darkMode")=="true"){
+				toggleLighting();
+			}
+		}
+	  function toggleLighting() {
+	    var el1 = document.getElementById("style1"),
+	        el2 = document.getElementById("style2");
+	    if (el1.disabled) {
+	      el1.disabled = undefined;
+	      el2.disabled = "true";
+	      localStorage.setItem("darkMode",false);
+	    } else {
+	      el1.disabled = "true";
+	      el2.disabled = undefined;
+	      localStorage.setItem("darkMode",true);
+	    }
+	  }
+	</script>
+	<script src="default.js"></script>
+
+	</head>
+	<body onload="loadLighting();loadPreviews()">
+		<nav id="navbar-wrapper" class="navbar-wrapper">
+			<div class="navbar">
+				<a class="home-hyperlink" href="home.html">hyforces</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a class="header-hyperlink" href="aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="header-hyperlink" href="search.html">Blog Search</a></li>
+					<label class="switch" style="margin-left:20px;">
+					  <input type="checkbox" onclick="toggleLighting()">
+					  <span class="slider round">
+					  </span>
+					</label>
+				</ul>
+			</div>
+		</nav>
+			<img src="./Resources/Home_Banner.jpeg" class="HomeBanner"></img>
+		<main class="main-page">
+			<div id="main-content" class="main-content" style="margin-top:650px">
+				<div class="main-title">
+				Welcome to hyforces blog!
+				</div>
+				<div id="BlogPreviews" class="BlogPreviews">
+					<!--
+					<div class="blog-preview">
+						<div class="blog-preview-title">
+							ahahahah
+						</div>
+						<div class="blog-preview-description">
+							AHHAHAHHAH
+						</div>
+						<div class="blog-preview-details">
+							<div>
+								2/12/2024
+							</div>
+							<div>
+								ahahahahh
+							</div>
+						</div>
+					</div>
+					-->
+				</div>
+
+			</div>
+			<div class="collapsed-row"></div>
+			<div class="footer">
+				hyforces
+			</div>
+		</main>
+		<script type="text/javascript">
+		  window.onscroll = fadeNav;
+		</script>
+	</body>
+</html>

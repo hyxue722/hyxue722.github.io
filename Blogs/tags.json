@@ -1,0 +1,16 @@
+{
+	"Tags": {
+		"cp":{"ID":0,"color":"#98c9f5"},
+		"life":{"ID":1,"color":"#98c9f5"},
+		"writing":{"ID":2,"color":"#98c9f5"},
+		"binarysearch":{"ID":100,"color":"#c1f5bf"},
+		"fft":{"ID":101,"color":"#c1f5bf"}
+	},
+	"IDtoTag":{
+		"0":"cp",
+		"1":"life",
+		"2":"writing",
+		"100":"binarysearch",
+		"101":"fft"
+	}
+}

@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/defaultstyle.css">
+		<link rel="stylesheet" href="/lightmode.css">
+
+	<link id="style1" rel="stylesheet" type="text/css" href="/lightmode.css" />
+	<link id="style2" rel="stylesheet" type="text/css" href="/darkmode.css" disabled="true" />
+	<script type="text/javascript">
+		function loadLighting(){
+			if(localStorage.getItem("darkMode")=="true"){
+				toggleLighting();
+			}
+		}
+	  function toggleLighting() {
+	    var el1 = document.getElementById("style1"),
+	        el2 = document.getElementById("style2");
+	    if (el1.disabled) {
+	      el1.disabled = undefined;
+	      el2.disabled = "true";
+	      localStorage.setItem("darkMode",false);
+	    } else {
+	      el1.disabled = "true";
+	      el2.disabled = undefined;
+	      localStorage.setItem("darkMode",true);
+	    }
+	  }
+	</script>
+	<script src="/default.js"></script>
+
+	</head>
+	<body onload="loadLighting()">
+		<nav id="navbar-wrapper" class="navbar-wrapper">
+			<div class="navbar">
+				<a class="home-hyperlink" href="/home.html">hyforces</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a class="header-hyperlink" href="/aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="header-hyperlink" href="/search.html">Blog Search</a></li>
+					<label class="switch" style="margin-left:20px;">
+					  <input type="checkbox" onclick="toggleLighting()">
+					  <span class="slider round">
+					  </span>
+					</label>
+				</ul>
+			</div>
+		</nav>
+			<img src="/Resources/Blog_Banner.jpeg" class="BlogBanner"></img>
+		<main class="main-page">
+			<div id="main-content" class="main-content">
+				<div class="main-title">
+					My Current Mentality
+				</div>
+				<div class="main-text">
+					<div class="main-text-line-break"></div>
+					It's April 22nd, 2024, and there is one month until USACO Camp.
+					<div class="main-text-line-break"></div>
+					Just 30 days left - the end of a journey.
+					<div class="main-text-line-break"></div>
+					I took M(IT)^2 yesterday - wonderful contest with wonderful problems. I wasn't the biggest fan of the short time limit, but that's probably bitterness speaking. I know some people who made it to the in person round - while I'm happy for them, as a friend, there is an unrelenting feeling of bitterness. Some sense of entitlement to some reward after this long journey of competitive programming. It all hinges on problem 4 - a problem that I had the full solution for, which I sat on for 40 minutes, unable to do anything as I stared at my screen and the few lines of code I had forced out of myself. This is the 4th contest in a row this has happened. My inability to implement the wonderful ideas swirling around in my head.
+
+					<div class="main-text-line-break"></div>
+					I have a greater understanding of why some people describe anger as "snapping" - beyond simply copying a figure of speech. When the contest ended, something did snap. Not in the sense of a rope stretched taut, but more of a rubber band. Not a sharp pinging noise, or a dull groan - it was like a resistance band, stretched just a bit too far, snapped backwards, smashing into a drum. A roaring thrum through my head. A dull but powerful pain at the back left side of my skull. It hurts so much to see this same experience repeated again and again, pain after pain, loss after loss.
+
+					<div class="main-text-line-break"></div>
+					No gifts are given for free - I suppose that if I had solved problem 4 in time, if I had been given this wonderful trip, a flight straight to MIT, I would have celebrated. It would have been one of the happiest moments of my life. But it would have slowed me down. Undue success would have hurt me - I still have much more to improve on. I'm missing a piece of the puzzle to problem solving - that hint of genius that I sometimes see within my fellows, the people who have gone beyond rationality and have seized a new idea of logical imagination. I need to improve my implementation ability, the power of my mind to record itself in the world.
+
+					<div class="main-text-line-break"></div>
+					The only thing I have now is USACO Camp. Do it or die - make IOI or I'll have to go and do random things over the summer. Even with this though, I am unable to take the keyboard in front of me. I'm lazy and I don't want to work, I don't want to do my notes, I don't want to solve problems, I don't want to put my fingers to a keyboard and create magic. I am looking to create that anger inside me again, the scream of a wolf with its foot caught in a trap. A sense of weirdness that overtakes all else, with a single-minded determination for me to achieve this last hurrah, this last display, the dream I've had since I was a small child hearing of the greatest talents in the local competition circuit. 
+
+					<div class="main-text-line-break"></div>
+					Maybe I'm feeling a bit weird, or I'm ranting about nonsense. I guess it doesn't matter. As long as I don't waste my days watching Youtube, mindlessly scrolling Reddit, reading story after story after story, rotting away, what I'm doing is working. I don't care if it's stupid, or crazy, or even a bit "edgy" - if it works it works. A dying animal desparate for something to latch on to for survival. Anything and everything.
+
+				</div>
+			</div>
+			<div class="collapsed-row"></div>
+			<div class="footer">
+				hyforces
+			</div>
+		</main>
+		<script type="text/javascript">
+		  window.onscroll = fadeNav;
+		</script>
+	</body>
+</html>

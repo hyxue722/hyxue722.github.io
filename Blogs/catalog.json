@@ -1,0 +1,31 @@
+{
+	"Blogs": [
+			{
+				"name": "Welcome to hyforces's blog!",
+				"date": "4/11/24",
+				"tags": [0,1,100,101],
+				"IDs":["0t34"],
+				"dir": "Blogs/0000.html",
+				"BlogID": "0000",
+				"preview":"Hi!"
+			},
+			{
+				"name": "Test",
+				"date": "4/11/24",
+				"tags": [0,2],
+				"IDs":[""],
+				"dir": "Blogs/0001.html",
+				"BlogID": "0001",
+				"preview":"test"
+			},
+			{
+				"name": "My Current Mentality",
+				"date": "4/22/24",
+				"tags": [0,1],
+				"IDs":[""],
+				"dir": "Blogs/0003.html",
+				"BlogID": "0003",
+				"preview":"A bit of pain..."
+			}	
+		]
+}

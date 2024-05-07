@@ -1,0 +1,285 @@
+#session {
+    top:0;
+    padding-top:0;
+    position:relative;
+    margin:0;
+}
+body {
+    font-family:Helvetica;
+    margin: auto;
+}
+.BlogBanner{
+  position:absolute;
+  z-index:1;
+  width:100%;
+  height:350px;
+}
+.HomeBanner{
+  position:absolute;
+  z-index:1;
+  width:100%;
+  height:100%;
+}
+.navbar-wrapper{
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  margin:0px;
+  padding:0px;
+  z-index:10;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:70px;
+  padding-right:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  position:fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  opacity:1.0;
+}
+.nav-links{
+	display:flex;
+	list-style: none;
+	margin:5px;
+}
+.nav-item{
+	display:inline-block;
+	align-content:center;
+	padding: 0px 20px;
+}
+.home-hyperlink{
+  font-size:30px;
+  font-weight:bolder;
+  text-decoration:none;
+}
+.header-hyperlink{
+  font-weight:lighter;
+  text-decoration:none;
+}
+.header-hyperlink:hover{
+  color:#61B3FF;
+}
+.header-hyperlink:active{
+  text-decoration: underline;
+}
+.main-page{
+	display:flex;
+  flex-wrap:wrap;
+	justify-content:center;
+}
+.main-content{
+  z-index:5;
+  padding-top:50px;
+	border-radius:10px;
+	width:50vw;
+	padding-bottom:30px;
+  padding-left:120px;
+  padding-right:120px;
+  margin-top:300px;
+}
+.main-title{
+  font-size:50px;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+.main-subtitle{
+  font-size:30px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.main-text{
+  font-size:15px;
+  line-height:1.5;
+}
+.main-text-line-break{
+  height:20px;
+}
+.paragraph{
+  line-height:1.8;
+  margin-bottom:20px;
+}
+.blog-preview{
+  margin:10px;
+}
+.blog-preview-title{
+  text-decoration:none;
+  font-weight: bold;
+  font-size:30px;
+}
+.blog-preview-description{
+  font-size:15px;
+}
+.blog-preview-details{
+  display:flex;
+  justify-content: space-between;
+  font-size:15px;
+}
+.collapsed-row{ 
+  flex-basis: 100%;
+  height: 0;
+}
+.footer{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f2e4f7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #f2e4f7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.Input{
+  background-image: url('Resources/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  margin:10px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-top:12px;
+  border-radius:10px;
+}
+
+.TagBox{
+  border-radius:10px;
+  padding:5px;
+  display:block;
+  box-shadow:0 0 1px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.TagBoxList{
+  display:inline-flex;
+}
+.TagItem{
+  font-family:Arial;
+  text-align:center;
+  padding:5px;
+  margin:10px;
+  border-radius:5px;
+  font-size:15px;
+  font-color:#320036;
+  display:flex;
+  align-items:center;
+}
+.BlogList{
+  width:100%;
+  border-spacing:0;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+.BlogItem{
+  margin-top:5px;
+  margin-bottom:20px;
+  text-align:center;
+}
+.BlogItemID{
+  padding-top:20px;
+  padding-bottom:20px;
+  width:5%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.BlogItemTitle{
+  padding-top:20px;
+  padding-bottom:20px;
+  width:10%;
+}
+.BlogItemTags{
+  padding-top:20px;
+  padding-bottom:20px;
+  width:20%;
+
+}
+.BlogItemDate{
+  padding-top:20px;
+  padding-bottom:20px;
+  width:5%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.BlogItemHyperLink{
+  text-decoration:none;
+  color:#1b0129;
+}
+.BlogItemHyperLink:active{
+  text-decoration: underline;
+}
+
+.PageSelector{
+  width:100%;
+  display:inline-flex;
+  justify-content:center;
+}
+
+.BlogSearchInfo{
+  justify-content:center;
+  text-align:center;
+  margin:20px;
+}
+
+

@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="defaultstyle.css">
+		<link rel="stylesheet" href="lightmode.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+		<script type="text/javascript" src="SearchEngine.js"></script>
+
+	<link id="style1" rel="stylesheet" type="text/css" href="lightmode.css" />
+	<link id="style2" rel="stylesheet" type="text/css" href="darkmode.css" disabled="true" />
+	<script type="text/javascript">
+		function loadLighting(){
+			if(localStorage.getItem("darkMode")=="true"){
+				toggleLighting();
+			}
+		}
+	  function toggleLighting() {
+	    var el1 = document.getElementById("style1"),
+	        el2 = document.getElementById("style2");
+	    if (el1.disabled) {
+	      el1.disabled = undefined;
+	      el2.disabled = "true";
+	      localStorage.setItem("darkMode",false);
+	    } else {
+	      el1.disabled = "true";
+	      el2.disabled = undefined;
+	      localStorage.setItem("darkMode",true);
+	    }
+	  }
+	</script>
+	<script src="default.js"></script>
+
+	</head>
+	<body onload="loadLighting();loadTags();loadIDs();loadBlogs();">
+		<nav id="navbar-wrapper" class="navbar-wrapper">
+			<div class="navbar">
+				<a class="home-hyperlink" href="home.html">hyforces</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a class="header-hyperlink" href="aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="header-hyperlink" href="search.html">Blog Search</a></li>
+					<label class="switch" style="margin-left:20px;">
+					  <input type="checkbox" onclick="toggleLighting()">
+					  <span class="slider round">
+					  </span>
+					</label>
+				</ul>
+			</div>
+		</nav>
+			<img src="./Resources/Blog_Banner.jpeg" class="BlogBanner"></img>
+		<main class="main-page">
+			<div id="main-content" class="main-content" style="width:80vw;padding:50px;display:block;justify-content:center;">
+				<div class="main-title" style="margin-bottom:20px;text-align:center;">
+					Blog Search
+				</div>
+				<div style="display:flex;justify-content:space-between;align-items:center">
+					<div class='main-text' style="flex:1;justify-content: center;text-align:center;">
+						<div style="">
+							Search by blog name:
+						</div>
+						<input type="text" id="NameInput" class="Input" onkeydown="nameSearch(event)" placeholder="Enter Name">
+						<script>
+							let nameparams=new URLSearchParams(window.location.search)
+							let relpar=nameparams.get("name")
+							if(relpar==null){relpar=""}
+							document.getElementById("NameInput").value=relpar;
+						</script>
+					</div>
+					<div class='main-text' style="flex:1;justify-content: center;text-align:center;">
+						<div>
+							Search for IDs:
+						</div>
+						<input type="text" id="IDInput" class="Input" onkeydown="addID(event)" placeholder="Enter IDs">
+					</div>
+					<div class='main-text' style="flex:1;justify-content: center;text-align:center;">
+						<div>
+							Add Tags:
+						</div>
+						<input type="text" id="TagInput" class="Input" onkeydown="addTag(event)" placeholder="Enter Tags">
+					</div>
+				</div>
+				<div class='main-text'>
+					Loaded IDs
+				</div>
+				<div class="TagBox">
+					<div id="LoadedIDs" class="TagBoxList">
+						<!--
+						<div class="TagItem" style="background-color:#98c9f5;">
+							fuck
+							<button type="button" onclick="deleteTag(0)">&#x2715;</button>
+						</div>
+						-->
+					</div>
+				</div>
+				<div class='main-text'>
+					Loaded Tags
+				</div>
+				<div class="TagBox">
+					<div id="LoadedTags" class="TagBoxList">
+					</div>
+				</div>
+				<!--background-color:#9964fa;-->
+				<!--background-color:#98c9f5;-->
+				<div class='main-text'>
+					<div class='main-subtitle' style="text-align:center">Results</div>
+					<table id="LoadedBlogs" class="BlogList">
+					</table>
+					
+					<table id="LoadedBlogs" class="BlogList">
+						<!--
+						<tr class="BlogItem" style="background-color:#9964fa;">
+							<td class="BlogItemID">
+								f
+							</td>
+							<td class="BlogItemTitle">
+								f
+							</td>
+							<td class="BlogItemTags">
+								<div class="TagBox">
+									<div class="TagBoxList">
+
+									</div>
+								</div>
+							</td>
+							<td class="BlogItemDate">
+								f
+							</td>
+						</tr>
+						-->
+					</table>
+					<div id="BlogSearchInfo" class="BlogSearchInfo">
+
+					</div>
+					<div id="PageSelector" class="PageSelector">
+						<button onclick="pagePrevious()">&#x2190;</button>
+						<input id="PageSelectorInput" class="text" style="text-align:center;width:30px;height:30px" onkeydown="changePage(event)">
+							
+						</input>
+						<script>
+							let pageparams=new URLSearchParams(window.location.search)
+							let pageindex=pageparams.get("page")
+							if(pageindex==null){pageindex="1"}
+							document.getElementById("PageSelectorInput").value=pageindex;
+						</script>
+						<button onclick="pageNext()">&#x2192;</button>
+					</div>
+				</div>
+			</div>
+			<div class="collapsed-row"></div>
+			<div class="footer">
+				hyforces
+			</div>
+		</main>
+		<script type="text/javascript">
+		  window.onscroll = fadeNav;
+		</script>
+	</body>
+</html>

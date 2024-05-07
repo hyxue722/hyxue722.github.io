@@ -1,0 +1,63 @@
+body {
+    background-color:#ffbddb;
+}
+.navbar {
+  background-color: #ff6bae;
+  box-shadow:0px 0px 5px #000000;
+  color: #fff;
+  opacity:1.0;
+}
+.home-hyperlink{
+  color:#550157;
+}
+.header-hyperlink{
+  color:#550157;
+}
+.main-page{
+	background-color:#ffbddb;
+}
+.main-content{
+	background-color:#fce8f1;
+  box-shadow:0px 0px 10px #000000;
+}
+.main-title{
+  color:#4a0e40;
+}
+.main-text{
+  color:#4a0e40;
+}
+.blog-preview{
+  color:#54013b;
+}
+.blog-preview-description{
+  color:#6e014d;
+}
+.blog-preview-details{
+  color:#6e014d;
+}
+.footer{
+  color:#6e014d;
+}
+.slider{
+  background-color:#550157;
+}
+.TagBox{
+  background-color:#ffbddb;
+}
+.blog-preview-divider{
+  color:#260025;
+  border-color:#260025;
+  background-color:#260025;
+}
+.BlogPreviewTitleLink:link{
+  color:#4a0e40;
+}
+.BlogPreviewTitleLink:visited{
+  color:#4a0e40;
+}
+.BlogPreviewTitleLink:hover{
+  color:#4a0e40;
+}
+.BlogPreviewTitleLink:active{
+  color:#4a0e40;
+}
