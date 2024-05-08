@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/defaultstyle.css">
+		<link rel="stylesheet" href="/lightmode.css">
+
+	<link id="style1" rel="stylesheet" type="text/css" href="/lightmode.css" />
+	<link id="style2" rel="stylesheet" type="text/css" href="/darkmode.css" disabled="true" />
+	<script type="text/javascript">
+		function loadLighting(){
+			if(localStorage.getItem("darkMode")=="true"){
+				toggleLighting();
+			}
+		}
+	  function toggleLighting() {
+	    var el1 = document.getElementById("style1"),
+	        el2 = document.getElementById("style2");
+	    if (el1.disabled) {
+	      el1.disabled = undefined;
+	      el2.disabled = "true";
+	      localStorage.setItem("darkMode",false);
+	    } else {
+	      el1.disabled = "true";
+	      el2.disabled = undefined;
+	      localStorage.setItem("darkMode",true);
+	    }
+	  }
+	</script>
+	<script src="/default.js"></script>
+
+	</head>
+	<body onload="loadLighting()">
+		<nav id="navbar-wrapper" class="navbar-wrapper">
+			<div class="navbar">
+				<a class="home-hyperlink" href="/home.html">hyforces</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a class="header-hyperlink" href="/aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="header-hyperlink" href="/search.html">Blog Search</a></li>
+					<label class="switch" style="margin-left:20px;">
+					  <input type="checkbox" onclick="toggleLighting()">
+					  <span class="slider round">
+					  </span>
+					</label>
+				</ul>
+			</div>
+		</nav>
+			<img src="/Resources/Blog_Banner.jpeg" class="BlogBanner"></img>
+		<main class="main-page">
+			<div id="main-content" class="main-content">
+				<div class="main-title">
+					My Experience with Fanfiction
+				</div>
+				<div class="main-text">
+					<div class="main-text-line-break"></div>
+					I think that, no matter what people say about fanfiction, how bad it is, they've all tried - at least once. They watched a show or read a book or played a video game, loved the characters and the world, and entered the fandom. From the fandom, they found fan art, fan animations, and finally, fan fiction. They, having heard some questionable things about fanfiction, hesistantly load up a fanfiction website - FFN or AO3 or whatever. Then, they read the first result, and especially on AO3 where all the tags are up front about the works' contents, they vow to never come back again.
+					<div class="main-text-line-break"></div>
+					I, like many other children, discovered fanfiction early on, after finishing one of the children's book series like <i>Percy Jackson and the Olympians</i> or <i>Harry Potter</i>. It's just like appending a few more books to the series. But this was mostly a passing interest, and I didn't really enjoy the first few results that I found. I put fanfiction in a little box in the corner of my mind and left for a few years.
+					<div class="main-text-line-break"></div>
+					I rediscovered fanfiction, just like many other things, during quarantine. My list of things to do had run dry at a point, and I needed something to stimulate me. It started with me watching the entirety of <i>Naruto</i>, which was my first introduction to anime. I liked the characters, and I didn't want to leave them just yet - enter fanfiction. I honestly don't even remember what the first fanfiction I read was (I do but it's a bit embarassing and I don't want to share it...), but googling up recommendations brought me to Reddit, and most specifically r/NarutoFanfiction. I found a community of people dedicated to consuming, producing, and archiving Naruto fanfiction.
+					<div class="main-text-line-break"></div>
+					One of the abilities I've since lost since my early days of reading is being able to read works with questionable prose and mechanics. I can deal with run-ons - I use those liberally myself, after all - but I can't deal with missing commas, quotation marks, contractions, and so on anymore. I just feel uncomfortable reading errors. But I once did have this ability, and it opened me up to reading quite literally everything under the sun. The first work that was recommended (we called this rec'ed) to me was <a class="main-text-hyperlink" href="https://www.fanfiction.net/s/6557238/1/Better-Left-Unsaid">Better Left Unsaid</a> by Kenchi618. This fic, while not evoking any specific special feelings in me, showed me what high quality fanfiction <i>could</i> be. Although note that when I say high-quality, I don't mean displays of writing ability and complexity - these are amateur writers after all. What I really mean are stories with satisfactory, sometimes even beautiful, mechanics and prose, with thought-out characters and plotlines and systems. Digging through the figurative piles of shit (although I do feel bad to call fanfictions shit - most of them do have great effort put into them), you can find bronze, silver, and at the best of times, gold. In a way, the search is rewarding. Digging through vast lists and archives of fanfictions to find the hidden gems that only you know about, that only you can tell people about. It's almost like a treasure hunt.
+					<div class="main-text-line-break"></div>
+					I haven't only consumed though - I have written fanfiction of my own. I've written a few one-shots, and one longer story that sits around 70,000 words. I'm not going to lie, it's absolute shit - the plot was not thought out, the characters one dimensional, excess of hand waving, and lacking prose. But for me, a 7th grader at the time, getting response from people across the internet who actually enjoyed reading something that I made with my own two hands - it was amazing. It also taught me a sense of appreciation for writers. It turns out that writing is not as simple as typing and learning how to write decent prose - you have to plan, make sure the characters have their own voices, motivations, why do these characters have those motivations, what history set up those events - a complex story takes great work, as the word complex does suggest. I'll come back to writing soon - during high school senior year, I'm looking to have a bit of fun with some of the hobbies I've lost.
+					<div class="main-text-line-break"></div>
+					Now this might be a bit cheesy, but I genuinely believe that fanfiction has changed me as a person, for the better (and for the worse - my first exposition to some of the more... questionable parts of the internet was through fanfiction). There's plenty of fics I could cite, but I think the most important one, by far, is <a class="main-text-hyperlink" href="https://archiveofourown.org/works/18954877/chapters/45005575">Chained to the Magma Pit</a>. This fic is about Naruto - but not in the always sunshine way of canon. But it's not also the rage and edginess that often makes its appearance in Mary Sue fics with steel-toed boots, a dark cloak, and midnight-black hair. It's a child lashing out at the world, pure and simple. I understood some of my own feelings better - jealousy, envy, anger, whatever else there is - as they were reflected in Naruto himself.
+					<div class="main-text-line-break"></div> 
+					The fic taught me to be kinder as well. It really hit me when the Nine-Tailed Fox told Naruto that Ayame was surprised because he asked her about her poetry - I looked back at my own conversations, and could seldom find an instance where I asked about someone else. You hear the saying "Put yourself in someone else's shoes" or "Do unto others as you would unto yourself" - but these sayings are not so easy to realize. This extends to everything - not just annoying the other person, but talking to them, making them feel better, and so on, for emotions are not easy things. I'm more socially aware now - when I talk to others, I can better tell when they're getting bored of what I'm saying, if I'm steamrolling them, if they want me to listen along and be interested by what's going on with their days. As a child, I was the center of the world, and I never saw these small things - but there I was, an 8th grader, finally learning this idea from a fanfiction of all things.
+					<div class="main-text-line-break"></div> 
+					Really - go out there, give fanfiction a try. If you're using AO3, I heavily recommend that you filter out certain tags that result in questionable works. If you want to follow me into Naruto fanfiction, go look for Coffee's List as a first exposition. And if that strikes your fancy, if for whatever fandom you're in, someone gives you a few gems in a recommendation, why not try it yourself? Dive into the endless halls and find a few bars of gold yourself.
+					<div class="main-text-line-break"></div> 
+				</div>
+			</div>
+			<div class="collapsed-row"></div>
+			<div class="footer">
+				hyforces
+			</div>
+		</main>
+		<script type="text/javascript">
+		  window.onscroll = fadeNav;
+		</script>
+	</body>
+</html>

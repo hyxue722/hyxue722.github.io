@@ -26,6 +26,15 @@
 				"dir": "Blogs/0003.html",
 				"BlogID": "0003",
 				"preview":"A bit of pain..."
-			}	
+			},
+			{
+				"name": "My Experience with Fanfiction",
+				"date": "5/7/24",
+				"tags": [1,2],
+				"IDs":[""],
+				"dir": "Blogs/0004.html",
+				"BlogID": "0004",
+				"preview":"I swear it's not weird... Just read the first two sentences before you potentially click away in disgust."
+			}
 		]
 }
