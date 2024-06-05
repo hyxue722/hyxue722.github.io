@@ -35,6 +35,15 @@
 				"dir": "Blogs/0004.html",
 				"BlogID": "0004",
 				"preview":"I swear it's not weird... Just read the first two sentences before you potentially click away in disgust."
+			},
+			{
+				"name": "Post Camp Reflection",
+				"date": "6/4/24",
+				"tags": [0,1],
+				"IDs":[""],
+				"dir":"Blogs/0005.html",
+				"BlogID":"0005",
+				"preview":"From the other end of the tunnel - and on the entrance to another tunnel."
 			}
 		]
 }

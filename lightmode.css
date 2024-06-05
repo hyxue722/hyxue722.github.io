@@ -14,7 +14,13 @@ body {
   color:#550157;
 }
 .main-page{
-	background-color:#ffbddb;
+  background-color:#ffbddb;
+  background-image:url("Resources/lightbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-blend-mode: overlay;
 }
 .main-content{
 	background-color:#fce8f1;

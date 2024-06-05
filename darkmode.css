@@ -14,7 +14,13 @@ body {
   color:#f2e4f7;
 }
 .main-page{
-	background-color:#2e0242;
+  background-color:#2e0242;
+  background-image:url("Resources/darkbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-blend-mode: overlay;
 }
 .main-content{
 	background-color:#3c1e4a;
