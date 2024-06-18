@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/defaultstyle.css">
+		<link rel="stylesheet" href="/lightmode.css">
+
+	<link id="style1" rel="stylesheet" type="text/css" href="/lightmode.css" />
+	<link id="style2" rel="stylesheet" type="text/css" href="/darkmode.css" disabled="true" />
+	<script type="text/javascript">
+		function loadLighting(){
+			if(localStorage.getItem("darkMode")=="true"){
+				toggleLighting();
+			}
+		}
+	  function toggleLighting() {
+	    var el1 = document.getElementById("style1"),
+	        el2 = document.getElementById("style2");
+	    if (el1.disabled) {
+	      el1.disabled = undefined;
+	      el2.disabled = "true";
+	      localStorage.setItem("darkMode",false);
+	    } else {
+	      el1.disabled = "true";
+	      el2.disabled = undefined;
+	      localStorage.setItem("darkMode",true);
+	    }
+	  }
+	</script>
+	<script src="/default.js"></script>
+
+	</head>
+	<body onload="loadLighting()">
+		<nav id="navbar-wrapper" class="navbar-wrapper">
+			<div class="navbar">
+				<a class="home-hyperlink" href="/home.html">hyforces</a>
+				<ul class="nav-links">
+					<li class="nav-item"><a class="header-hyperlink" href="/aboutme.html">About Me</a></li>
+					<li class="nav-item"><a class="header-hyperlink" href="/search.html">Blog Search</a></li>
+					<label class="switch" style="margin-left:20px;">
+					  <input type="checkbox" onclick="toggleLighting()">
+					  <span class="slider round">
+					  </span>
+					</label>
+				</ul>
+			</div>
+		</nav>
+			<img src="/Resources/Blog_Banner.jpeg" class="BlogBanner"></img>
+		<main class="main-page">
+			<div id="main-content" class="main-content">
+				<div class="main-title">
+					On Stress and Motivation and Recognition
+				</div>
+				<div class="main-text">
+					<div class="main-text-line-break"></div>
+					In these past few days, I've made a few observations, putting what I previously only subconsciously thought of into actual words. After coming back home, everything seems to be colored the same way - in a thousand shades of white.
+					<div class="main-text-line-break"></div>
+					At camp, I was sick, sleep deprived, and plagued with headaches. Yet during that time, I felt truly alive. During that competition, my adrenaline was at an all time high, my heart was pumping furiously, and every problem I made progress on felt like a splash of color and emotions. Fooling around with my friends, even when we were just doing stupid things, felt like some of the greatest vacations I had ever taken. Of course, now, I'm on a bit of a dopamine detox. But I don't think that's quite it. Blaming everything on dopamine seems so boring...
+					<div class="main-text-line-break"></div>
+					Now to go on a slight tangent. To me, hobbies are best in moderation. Making a quick sketch before bed, or spending twenty minutes brainstorming more people to add to my world, or playing a short Minecraft session with friends - these are all treasured activities. Yet when I'm given the opportunity to do these freely, they become less appealing. I don't want to spend 3 hours nitpicking over which finger looks slightly too long, or fretting over unrealistic motivations and plotholes, or actually building another massive farm. It's the fact that I don't get to do these hobbies as often that makes them all the better. I enjoy competitive programming too - it's just that, when you're really sitting down and training, it becomes a bit tiring. So moderation is important.
+					<div class="main-text-line-break"></div>
+					But I wouldn't attribute this effect completely to moderation of a single hobby. If I rotate between twenty hobbies on a break day, it still gets a little bit tiring. It's the fact that your free time in general is limited that really makes that free time so worth enjoying. I recognize that I am in a relatively privileged position to make that claim. I don't have many external stressors, most of which I have already acclimated to, and I can deal with internal stress easily. But for a person like me, who faces no painful agonists, that little bit of stress is what gives my life meaning. Otherwise, life becomes a simple and peaceful dream, painted in the 1000 shades of white that heaven too is colored with. I don't want to be that guy, but the show <i>Frieren: Beyond Journey's End</i> encapsulates this feeling rather well. The main character, an immortal elf, feels no motivation to do anything in the near-infinite time that she is given. But place any being on a timer, or in a little danger, and they will enjoy life to its fullest while they can.
+					<div class="main-text-line-break"></div> 
+					Now to a separate topic, only connected with the fragile ideal of "motivation." Out of all the things you can do, competitions in a whole, but I would point to academic olympiads as a particular subset of those, are some of the worst things for your motivation. It's not like hobbies. Don't get me wrong - again, I love competitive programming. It's a fun sport that I'm glad to have been introduced to by a family friend, but once you do it as a competition, you can't emerge unscathed from that universal idea that the only value of what you've done is what award you get. I'll elaborate in the paragraph after the next.
+					<div class="main-text-line-break"></div> 
+					It's simple for me to log onto a video game, play a quick 10 rounds, and feel the instant feedback reward from the five that I win. But through that entire process, I don't really get anything done - if I actually sat down and tried to improve at that video game, maybe the story would be different, but the lack of need for training is what makes those things so appealing... It's the same thing with little things like playing a few keys on the piano, or learning a few card tricks. For just a little investment of time, you can feel the praise of your peers for just a little while. I suspect there's a similar reason to why long-form educational content seems to have grown in popularity in recent years, while actual tangible education and ability has not grown at a similar speed (this is just the bitter opinion of a random high schooler). Watching an hour long video, for many people, is an easy way of tricking themselves into believing that they are learning. By simply dipping their toes in the pool, they get the reward of having "swam." Humans are built for these things. As creatures designed to survive in the wilderness, the greedy algorithm is a simple way of getting past that basic passing grade to survive. As such, we look for the shortest path for the maximum short term reward that we can see.
+					<div class="main-text-line-break"></div> 
+					Now compare this to competitions. I'll speak about my experience in olympiads, because talking for others seems like a dumb idea. You spend a year training, working hard, all for it to culminate in one contest. If it's your first year doing so, you'll probably even enjoy that whole process. I did. But when you fail for that first time, and the people around you suddenly don't care about what you're doing - it's been downgraded from a skill and talent and something "useful" down to a hobby - it really hurts. As humans, we are naturally desparate for the acceptance of others - I don't think it would be far fetched for me to say that it is psychologically coded into us. When that acceptance, that praise, is not received for a year of work, it becomes suddenly harder to keep on moving forward. If I didn't make USACO Camp in 10th grade, if I never made it at all, if I never rediscovered it and my affinity for it, who would have cared that I even did competitive programming in the first place? I'm guilty of applying this to others too. If I hear that someone does competitive programming, my automatic reaction is to find their Codeforces rating. If it's high, they probably trained more and worked harder to produce that tangible result - it's easy to see, and acknowledge, the work that they put in. But the people who never find a lucky contest, and maybe just weren't as talented, and ended up with a lower rating - they might have a barely higher rating than someone who didn't really care about the sport but had a few lucky contests and a burst of natural talent. And I can't see all of the work and tears and passion that they put into what they did. It's just sad. For every winner standing victorous at the crest of the hill, you don't see the hundreds, thousands, tens of thousands, of people who were, even are, clawing their way up at the same time. You won't get material rewards unless you're the best. The emotional reward of having fun through a hobby is dullened by the dismissive attitude of others. Your ability is categorized into one of three things - average Joe, you can beat the average Joe, or you're the best of the best. Moving forward in an olympiad, in any competition in general, is one of the hardest things you can do. There is no reward in sight. This is one of the factors that uniquely contributes to my respect of people who compete for the sake of competition. The people who can, despite all the wind pushing them back, sail onwards with no land or respite in sight.
+					<div class="main-text-line-break"></div> 
+					So I don't know how to summarize this blog. One - a little bit of stress is what makes my life worth living. The struggle to improve. Two - it takes a little bit of special something to compete, to do more than just surviving. Combining these together. The special something that makes me tick is stress - both the feeling that time is running out, and the idea that I am always not good enough. Not in a self deprecating way, but in a way that makes me strive for perfection.
+					<div class="main-text-line-break"></div> 
+				</div>
+			</div>
+			<div class="collapsed-row"></div>
+			<div class="footer">
+				hyforces
+			</div>
+		</main>
+		<script type="text/javascript">
+		  window.onscroll = fadeNav;
+		</script>
+	</body>
+</html>
